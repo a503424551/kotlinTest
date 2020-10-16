@@ -13,14 +13,14 @@ fun main() {
     p.name="tom"
     p.eat()*/
 
-    var  s=Student("221",31)
+    var  s=Student("221",31 )
 
-    s.name="student"
+   s.name="student"
     s.age=12
     s.eat()
 }
 
-class Student (var sno:String,var grade:Int): Person() {
+class Student (var sno:String,var grade:Int ): Person() {
 
     init {
         sno= sno+"init"
