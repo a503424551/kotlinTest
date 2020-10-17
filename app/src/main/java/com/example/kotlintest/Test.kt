@@ -18,9 +18,11 @@ fun main() {
    s.name="student"
     s.age=12
     s.eat()
+    s.doHomework()
+    s.readbook()
 }
 
-class Student (var sno:String,var grade:Int ): Person() {
+class Student (var sno:String,var grade:Int ): Person() ,study{
 
     init {
         sno= sno+"init"
@@ -29,7 +31,21 @@ class Student (var sno:String,var grade:Int ): Person() {
      override fun  eat(){
         print("name="+name+"--age="+age+"--sno="+sno+"--grade="+grade)
     }
+
+    override fun readbook() {
+       print("student need readbook")
+    }
+
+    override fun doHomework() {
+    print("student need doHomework")
+    }
 }
+
+interface  study{
+    fun  readbook()
+    fun  doHomework();
+}
+
 
 open class Person {
     var  name=""
