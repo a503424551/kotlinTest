@@ -1,14 +1,17 @@
 package com.example.kotlintest
 
+import java.util.*
+
 fun main() {
     val s1 = singleObj
     val s2 = singleObj
     //print(s1.equals(s2))
-      s2.listTest()
+   //   s2.listTest()
     //  s2.mapTest()
     /* val  c=Cellphone("xiaomi","02415")
     val c2=Cellphone("xiaomi","02415")
         print(c==c2)*/
+    s1.javaTest()
 }
 
 data class Cellphone(var name: String, var phonenumber: String)
@@ -52,6 +55,17 @@ object singleObj {
      /*   for (entry in mapTest) {
      println(entry.key.toString() + "\t" + entry.value)
      }*/
+
+    }
+
+    fun javaTest(){
+    Thread(object :Runnable{
+            override fun run() {
+                println("Thread is running.")
+            }
+        }
+        ).start()
+ 
 
     }
 
