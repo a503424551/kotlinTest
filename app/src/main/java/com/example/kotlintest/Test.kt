@@ -17,9 +17,16 @@ fun main() {
 
    s.name="student"
     s.age=12
-    s.eat()
+/*    s.eat()
     s.doHomework()
-    s.readbook()
+    s.readbook()*/
+    s.allDo(s)
+
+}
+
+interface  study{
+    fun  readbook()
+    fun  doHomework();
 }
 
 class Student (var sno:String,var grade:Int ): Person() ,study{
@@ -39,12 +46,14 @@ class Student (var sno:String,var grade:Int ): Person() ,study{
     override fun doHomework() {
     print("student need doHomework")
     }
+
+    fun  allDo(s:study ?){
+           s?.doHomework()
+        s?.readbook()
+    }
 }
 
-interface  study{
-    fun  readbook()
-    fun  doHomework();
-}
+
 
 
 open class Person {
