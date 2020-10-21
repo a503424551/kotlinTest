@@ -40,10 +40,10 @@ class ChartView(context: Context?) : View(context) {
 
         paintXY.strokeWidth=1f
         yLinesHeight=(height-marg*2)/(yLinesNumber)
-        yValue=ymaxValue/5
+        yValue=ymaxValue/yLinesNumber
         for (i in 0 until yLinesNumber){
             canvas?.drawLine(marg, marg + yLinesHeight * i, width - marg, marg + yLinesHeight * i, paintXY)
-            canvas?.drawText((ymaxValue-yValue*i).toString(),10f,(marg + yLinesHeight * i)+5f,paintXY)
+            canvas?.drawText((ymaxValue-yValue*i).toInt().toString(),10f,(marg + yLinesHeight * i)+5f,paintXY)
         }
 
      //   for (i in 1 until chartCount+1){
