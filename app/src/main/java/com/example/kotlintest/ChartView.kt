@@ -24,8 +24,9 @@ class ChartView(context: Context?) : View(context) {
             this.list=lists;
     }
 
-    fun setYData(yLinesNumber :Int){
+    fun setYData(yLinesNumber :Int ,ymaxValue:Float){
             this.yLinesNumber=yLinesNumber
+        this.ymaxValue=ymaxValue
     }
 
     override fun onDraw(canvas: Canvas?) {
