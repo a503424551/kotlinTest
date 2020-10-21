@@ -17,10 +17,10 @@ fun main() {
 
    s.name="student"
     s.age=12
-/*    s.eat()
-    s.doHomework()
-    s.readbook()*/
-    s.allDo(s)
+    s.eat()
+/*    s.doHomework()
+    s.readbook()
+    s.allDo(s)*/
 
 }
 
@@ -31,10 +31,10 @@ interface  study{
 
 class Student (var sno:String,var grade:Int ): Person() ,study{
 
-    init {
+   /* init {
         sno= sno+"init"
         grade= grade+1
-    }
+    }*/
      override fun  eat(){
         print("name="+name+"--age="+age+"--sno="+sno+"--grade="+grade)
     }
