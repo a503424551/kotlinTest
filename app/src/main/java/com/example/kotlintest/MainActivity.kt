@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val chartView = chartView;
         var list = mutableListOf<chartBean>()
         var max = 600
-        for (i in 0..10) {
+        for (i in 0..20) {
             var chartView = chartBean("", (0..max).random(), "小米")
             list.add(chartView)
         }
