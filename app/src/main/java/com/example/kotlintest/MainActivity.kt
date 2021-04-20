@@ -6,14 +6,14 @@ import android.os.Bundle
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-      val chartView = ChartView(this)
+     /* val chartView = ChartView(this)
         setChartView(chartView)
-        setContentView(chartView)
+        setContentView(chartView)*/
 
 
-    /*    setContentView(R.layout.activity_main)
+       setContentView(R.layout.activity_main)
         val chartView = findViewById<ChartView>(R.id.cv)
-        setChartView(chartView)*/
+       setChartView(chartView)
 
     }
 

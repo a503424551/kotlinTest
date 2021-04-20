@@ -77,7 +77,7 @@ class ChartView : View {
             )
         }
 
-        //   for (i in 1 until chartCount+1){
+
         for (c in list) {
             var i = list.indexOf(c) + 1
 
