@@ -3,7 +3,7 @@
 英文api地址：  
 https://kotlinlang.org/docs/home.html  
 中文api地址  
-https://www.kotlincn.net/docs/reference/ 
+https://www.kotlincn.net/docs/reference/  
 demo效果图   
      ![Image text](https://github.com/a503424551/kotlinTest/blob/mian/image/ChartView.png)
         
